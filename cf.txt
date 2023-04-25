@@ -1,0 +1,115 @@
+**FTK Imager**
+1: Open AccessData FTK Imager -> Go to File -> then Create Disk Image
+2: Select Contents of a Folder
+3: Browse & Select the any folder and Click on Finish
+4: Click on Add and Fill all the information and Click on Next.
+5: Browse the Destination Folder & Give Image Filename and Click on Finish.
+6: Click on Start and then click on Close
+7: Click on Image Summary
+8: Go to File -> Add Evidence Item and Select Image File.
+9: Browse & Select the Image File we have created and Click on Finish
+10: Analyzed Image File
+
+**Capture network packets**
+1: Open Wireshark and Select your Network Connection.
+2: Start and Stop Capturing the packets.
+3: Open Chrome and Search different sites.
+4: It will capture all the packets and show the details
+
+**Forensic Case Study**
+1: Open Autopsy and Create a New Case.
+2: Enter Case Name and Base Directory where case will be stored.
+3: Enter other details and Click on Finish
+4: Add Data Source on which Case Study is to be done.
+5: Add Data Source Type and Select Local Disk for entire Disk or
+Logical files for a particular file or folder. Select Logical Files in our Case.
+6: Select the Disk and Click on Finish
+7: Select different operations to be performed on the disk and Clickon Next.
+8: Click on Finish
+9: You can see all the files including deleted files and all details regarding the files
+
+**Data Acquisition**
+1: Open Pro Discover and Enter Case Details.
+2: Now under Add Tab, Select Capture & Add Image to Enter the
+Disk/Data on which is to be performed
+3: Enter Source Drive and Destination where acquisition result will
+be stored and other Details. Click on Ok
+4: After some time it will give us Report, where all the files will be
+shown.
+5: Click on Sector View, it will show us Used Sector, Unused Sector
+and Boot Sector & Partition Data
+
+**Analyze the packets**
+1: Open Wireshark and Select your Network Connection.
+2: Identifying the GET/HTTP used by snopes.com
+3: Follow the TCP Stream to find out Server
+4: Go to www.zero.webappsecurity.com and Login.
+5: Look for the POST SIGN-IN method. It will have your Username
+and Password captured.
+6: If you follow stream TCP you can see both Username and
+Password captured in highlighted part
+
+**Sysinternals tools**
+Part (a): Using the Process Monitor:
+1:Open Chrome browser and search any random thing. Run the 
+Process Monitoras administrator. Click on “Start Capturing”.
+2: Go to filter. Select “process name”, Select “is”, Select 
+Chrome.exe and click on
+3: The monitor will filter out only the Chrome.exe processes
+4: Go to tools -> process tree. You can see the hierarchical structure 
+of the processes
+5: Go to File Summary. Here you can see the overall file summary.
+You can filter this summary to filter out a certain process. Here we filter
+out Chrome.exe process.
+Part (b): Using the RAM Capture:
+1: Run the RAMCapturer program. Set your Destination and click 
+Capture.
+Part (c): Using the TCP View:
+1: Run the TCPView Program. Select the options TCP v4, TCP v6, UPD 
+v4, UPD v6
+2: In the Search bar, search ‘http’. Only the http processes will filter 
+out.
+3: Now select any processes -> Right click -> whois. It will show the 
+who.is information about that process
+Part (d): Using Disk Monitor:
+1: Run the Disk Monitor as Administrator. You can see all the disk 
+processes.
+Part (e): Using VMMap:
+1: Run the VMMap Application as administrator. Select any 
+application(here AnyDesk). You can see all the process information about 
+that application
+
+**Web Browser Forensics**
+1: Open Browser History Examiner. Click on Capture History
+2: Select Capture history from this computer. Click Next.
+3: Select the desired User Profile, Browsers and Data you want to 
+capture. Select the destination for the captured file and Click Capture
+4: After the capturing process is done, it will extract all the data. You 
+can see different sections of the data. Click on Bookmarks Section to see 
+all the bookmarks
+5: Click on the Cookies Section to see all the cookies stored in 
+different browsers
+6: Click on the searches tab to see all the searches performed on 
+different browsers
+7: Click on the Websites visits tab to see the list of visited websites.
+8: Now to make report on this data, Go to File -> Export to html. It 
+will create an Html file of the report
+
+**Recovering and Inspecting deleted files**
+1: Open Recuva Program. Click Next -> All files -> Next
+2: Select I’m not sure -> Next -> Start.
+3: Recuva will show all the deleted files whose fragments are still 
+presents in thedisk. Green dot indicates excellent condition, Yellow 
+dot indicates poor condition and Red dot indicates Unrecoverable
+condition.
+4: Now go to any drive’s folder. Create a new text file. Type 
+something in it. Save it.Then “Shift + delete” it.
+5: Now scan the drive again using Recuva. Sort the files in 
+descending order of lastmodified. You will see your deleted file
+6: Now check the box near the deleted file and click recover 
+button on the bottomright corner. Browse the location in which you
+want to recover the file and click OK.
+7: Now create another text file. Write some content and save it. 
+Now just delete thefile. Then go to the recycle bin and delete the file 
+again. Now scan the drive using Recuva. You will see two deleted files
+for your deleted file
